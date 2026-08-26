@@ -1,6 +1,6 @@
 # Maxim Maximov
 
-Math & CS student at Saint Petersburg State University · Deep Learning · RecSys · Graph ML · LLM Agents · Classic ML
+Math & CS student at Saint Petersburg State University · Deep Learning · RecSys · GraphML · LLM Agents · Classic ML
 
 Building and breaking ML systems — recommenders, graph models, boosting pipelines — to find where a good metric stops being honest.
 
