@@ -18,3 +18,24 @@ Ablation по группам признаков разошёлся с gain-ва�
 
 [Geometric Deep Learning for Molecular Tensors](https://github.com/mmmaximov/equivariant-molecular-tensors) — SO(3)-эквивариантное предсказание вектора и тензора: симметрия вшита в архитектуру, а не выучивается на аугментациях. SchNet плюс головы ранга 1 и 2, QM9S.  
 MAE 0.038 D против 0.639 у полносвязной сети большего размера, эквивариантность верифицирована численно на необученной модели. Абляция на трёх сидах: топологические признаки бесполезны, потому что лежат в ядре группового действия.
+
+### Стек
+
+**Использую в проектах:** Python, PyTorch, PyTorch Geometric, scikit-learn, XGBoost,
+CatBoost, LightGBM, NumPy, Pandas, pyarrow, Optuna, SHAP, Git, Docker, FastAPI, Ollama, C++
+
+**Работал с:** SQL (PostgreSQL), Kafka, Airflow, Linux, CI/CD (GitHub Actions), LangGraph
+
+## Соревнования
+
+- **МТС True Tech Hack**, LocalScript — 19 / 131
+- **RWB WildHack**, автоматизация логистики склада — 35 / 443, командный трек
+- **RWB WildHack**, отгрузки без простоев — 125 / 672, индивидуальный трек
+- **Yandex ML Challenge**, Long Tour — 121 / 630
+- **Changellenge Cup IT**, анализ данных — HQA15%
+
+## Учёба
+
+- **СПбГУ**, матмех, «Математика и компьютерные науки» — 2 курс, 2025–2029
+- **Deep Learning School**, МФТИ — 2025
+- **Agents Week**, интенсив ШАД (Яндекс) — 2026
