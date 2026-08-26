@@ -6,6 +6,13 @@
 того, что она может: какая информация не попала в признаки, почему не сработало
 то, что должно было, и насколько собственным числам можно верить.
 
+### Стек:
+
+**Использую в проектах:** Python, PyTorch, PyTorch Geometric, scikit-learn, XGBoost,
+CatBoost, LightGBM, NumPy, Pandas, pyarrow, Optuna, SHAP, Git, Docker, FastAPI, Ollama, C++
+
+**Работал с:** SQL (PostgreSQL), Kafka, Airflow, Linux, CI/CD (GitHub Actions), LangGraph
+
 ## Проекты
 
 [SASRec on Yandex Yambda](https://github.com/mmmaximov/sasrec-yambda) — decoder-only трансформер для sequential recommendation на 881 тыс. событий Яндекс Музыки. Causal self-attention написан вручную; аудио-эмбеддинги треков квантованы в semantic IDs через RQ-VAE, и рекомендация переводится в generative retrieval: словарь схлопывается со 181 тыс. айтемов до 1026 токенов, модель легче в 45 раз.  
@@ -18,13 +25,6 @@ Ablation по группам признаков разошёлся с gain-ва�
 
 [Geometric Deep Learning for Molecular Tensors](https://github.com/mmmaximov/equivariant-molecular-tensors) — SO(3)-эквивариантное предсказание вектора и тензора: симметрия вшита в архитектуру, а не выучивается на аугментациях. SchNet плюс головы ранга 1 и 2, QM9S.  
 MAE 0.038 D против 0.639 у полносвязной сети большего размера, эквивариантность верифицирована численно на необученной модели. Абляция на трёх сидах: топологические признаки бесполезны, потому что лежат в ядре группового действия.
-
-### Стек
-
-**Использую в проектах:** Python, PyTorch, PyTorch Geometric, scikit-learn, XGBoost,
-CatBoost, LightGBM, NumPy, Pandas, pyarrow, Optuna, SHAP, Git, Docker, FastAPI, Ollama, C++
-
-**Работал с:** SQL (PostgreSQL), Kafka, Airflow, Linux, CI/CD (GitHub Actions), LangGraph
 
 ## Соревнования
 
@@ -39,3 +39,9 @@ CatBoost, LightGBM, NumPy, Pandas, pyarrow, Optuna, SHAP, Git, Docker, FastAPI, 
 - **СПбГУ**, матмех, «Математика и компьютерные науки» — 2 курс, 2025–2029
 - **Deep Learning School**, МФТИ — 2025
 - **Agents Week**, интенсив ШАД (Яндекс) — 2026
+
+___
+
+**Профессиональные интересы:** графовые методы, deep learning, LLM-агенты. Самое интересное в ML для меня — момент, когда модель упирается в потолок, и оказывается, что дело не в её размере, а в том, как описан объект. В трёх проектах подряд я приходил ровно к этому, каждый раз с другой стороны.
+
+**Контакты:** [Telegram](https://t.me/maximovmm) · [mmworkmaildaaa@gmail.com](mailto:mmworkmaildaaa@gmail.com)
