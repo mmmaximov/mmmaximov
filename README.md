@@ -56,6 +56,6 @@ The most interesting moment in ML, for me, is when a model hits a ceiling — an
 
 Interests: graph methods, deep learning, LLM agents.
 
-## Contact
+**Contact:** [Telegram](https://t.me/maximovmm) · [mmworkmaildaaa@gmail.com](mailto:mmworkmaildaaa@gmail.com)
 
-[Telegram](https://t.me/maximovmm) · [mmworkmaildaaa@gmail.com](mailto:mmworkmaildaaa@gmail.com)
+English, German - fluent, Russian - native
