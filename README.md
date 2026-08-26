@@ -1,16 +1,20 @@
-## Hi there 👋
+# Maxim Maximov
 
-<!--
-**mmmaximov/mmmaximov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Студент матмеха СПбГУ · Deep Learning, RecSys, Classic ML, LLM-агенты, графовые методы**
 
-Here are some ideas to get you started:
+Ищу ML-стажировку. Мне важно не только обучить модель, но и понять границы
+того, что она может: какая информация не попала в признаки, почему не сработало
+то, что должно было, и насколько собственным числам можно верить.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Проекты
+
+[SASRec on Yandex Yambda](https://github.com/mmmaximov/sasrec-yambda) — decoder-only трансформер для sequential recommendation на 881 тыс. событий Яндекс Музыки. Causal self-attention написан вручную; аудио-эмбеддинги треков квантованы в semantic IDs через RQ-VAE, и рекомендация переводится в generative retrieval: словарь схлопывается со 181 тыс. айтемов до 1026 токенов, модель легче в 45 раз.  
+NDCG@10 0.575 у гибрида против 0.413 у обычных item-эмбеддингов. Чистый generative retrieval проваливается (0.181), и per-position perplexity объясняет причину: RQ-VAE учился реконструировать аудио, поэтому из четырёх уровней квантования из поведения предсказуем только первый.  
+Попутно найден баг в метрике: last-item baseline показывал HitRate@10 = 1.0 из-за ничьих в ранге, после честного деления — 0.0145.
+
+[AML Detection on Transaction Graph]() — детекция отмывания денег на 5 млн транзакций при дисбалансе 1:1122. Графовая топология переводов переведена в 86 признаков через скользящие окна на префиксных суммах: searchsorted вместо groupby().rolling(), который в память не помещается, 40 секунд на 497 тыс. счетов.  
+PR-AUC 0.348 против 0.011 у наивного бейзлайна, holdout 0.462, Precision@100 = 0.84. Error analysis по типам схем показал систематический провал: звёздчатые ловятся с recall 0.53–0.62, цепочечные с 0.25–0.32, и граница проходит по топологии, потому что все признаки ограничены одним хопом.
+Ablation по группам признаков разошёлся с gain-важностями, сторона получателя даёт вдвое больший вклад, чем следует из важностей XGBoost.
+
+[Geometric Deep Learning for Molecular Tensors](https://github.com/mmmaximov/equivariant-molecular-tensors) — SO(3)-эквивариантное предсказание вектора и тензора: симметрия вшита в архитектуру, а не выучивается на аугментациях. SchNet плюс головы ранга 1 и 2, QM9S.  
+MAE 0.038 D против 0.639 у полносвязной сети большего размера, эквивариантность верифицирована численно на необученной модели. Абляция на трёх сидах: топологические признаки бесполезны, потому что лежат в ядре группового действия.
