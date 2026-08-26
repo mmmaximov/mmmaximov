@@ -20,7 +20,7 @@ Decoder-only transformer for sequential recommendation, trained on 881K events f
 - Pure generative retrieval collapses (0.181) — per-position perplexity explains why: RQ-VAE was trained to reconstruct audio, so only the first of four quantization levels is predictable from behavior.
 - Found a metric bug: the last-item baseline showed HitRate@10 = 1.0 due to rank ties; after a fair tie-break, it dropped to 0.0145.
 
-### AML Detection on Transaction Graph
+### [AML Detection on Transaction Graph](https://github.com/mmmaximov/course-works/tree/main/dz3)
 Money-laundering detection on 5M transactions with a 1:1122 class imbalance. Transfer graph topology compressed into 86 features via sliding windows over prefix sums: `searchsorted` instead of `groupby().rolling()`, which doesn't fit in memory — 40 seconds for 497K accounts.
 
 - PR-AUC of 0.348 vs. 0.011 for the naive baseline, 0.462 on holdout, Precision@100 = 0.84.
